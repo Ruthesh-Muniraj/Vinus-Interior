@@ -1,0 +1,152 @@
+.header{
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255,255,255,0.72);
+    box-shadow: 1px 0px 10px #dadada;
+    overflow: hidden;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    nav{
+        padding-top: .5rem;
+        padding-bottom:.5rem; 
+        position: relative;   
+        flex-wrap: wrap;
+    }
+    &__logo{
+        img{
+            height: 30px;
+            width: 190px;
+        }
+    }
+    
+    &__links{
+        a{
+            position: relative;
+            font-size: $font-sm;
+            font-weight: bolder;
+            transition: background 500ms ease-in-out;
+            color:$navyblue;
+            padding: 6px 10px;
+            border-radius: 5px;
+            
+            &:not(:last-child){
+                margin-right: 32px;
+            }
+
+            &::before{
+                content:"";
+                position: absolute;
+                display: block;
+                height: 3px;
+                left:0;
+                right:0;
+                bottom: -10px;
+                background: $navyblue;
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+                border-radius: 5px 5px 5px 5px;
+            }
+            &:hover{
+                // color: $white;
+                background: rgba(146, 146, 146, 0.356);
+                &::before{
+                    opacity: 1;
+                }
+            }
+
+            &.active{
+                background: rgba(146, 146, 146, 0.356);
+            }
+            
+        }
+        .Quotation-btn{
+            background: none;
+            padding: 10px;
+            border: 2px solid $navyblue;
+            border-radius: 7px;
+            background: $navyblue;
+            color: $white   ;
+        }
+    }
+    .hamburger-menu{
+        cursor: pointer;
+    }
+    
+    @media only screen and (max-width: 1023px){
+        .Quotation-btn{
+                background: none;
+                padding: 10px;
+                border: 2px solid $white;
+                border-radius: 7px;
+                color: $navyblue;
+                max-width: 80%;
+                margin: 10px 0px;
+                
+                &:hover{
+                    -webkit-backdrop-filter: saturate(180%) blur(20px);
+                    backdrop-filter: saturate(180%) blur(20px);
+                    background-color: rgba(255,255,255,0.72);
+                }
+            }
+        }
+        &__links__mobile{
+            position: absolute;
+            right: -100px;
+            a{
+                font-size: $font-sm;
+                font-weight: bolder;
+                transition: background 500ms ease-in-out;
+                color:$navyblue;
+                padding: 6px 10px;
+                border-radius: 5px;
+                display: block;
+                
+                &:not(:last-child){
+                    margin-right: 32px;
+                }
+    
+                &::before{
+                    content:"";
+                    position: absolute;
+                    display: block;
+                    height: 3px;
+                    left:0;
+                    right:0;
+                    bottom: -10px;
+                    background: $navyblue;
+                    opacity: 0;
+                    transition: opacity 300ms ease-in-out;
+                    border-radius: 5px 5px 5px 5px;
+                }
+                &:hover{
+                    // color: $white;
+                    background: rgba(146, 146, 146, 0.356);
+                    &::before{
+                        opacity: 1;
+                    }
+                }
+    
+                &.active{
+                    background: rgba(146, 146, 146, 0.356);
+                }
+                
+            }
+        }
+
+    
+}
+
+@media (max-width:1210px){
+    .header{
+        &__links{
+            a{
+                &:not(:last-child){
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+

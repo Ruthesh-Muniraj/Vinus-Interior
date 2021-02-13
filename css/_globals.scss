@@ -1,0 +1,165 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.3;
+    background:rgb(255, 255, 255);
+}
+
+// Flexbox
+.flex{
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+.content{
+  margin-top:15vh;
+}
+@media (max-width:767px){
+  .content{
+    margin-top:5vh;
+  }
+}
+.arrow {
+  border: solid $navyblue;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+section{
+  width: 100%;
+  height: 100%;
+}
+
+// Visiblity
+.hide-for-mobile{
+  @media only screen and (max-width: 1023px){
+    display: none;
+  }
+}
+.hide-for-desktop{
+  @media only screen and (min-width: 1024px){
+      display: none;
+  }
+}
+a,a:hover,a:visited{
+  text-decoration: none;
+}
+mark{
+  background-color: rgba(240, 204, 160, 0.671);
+}
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+#why-us{
+  background: url(../assets/why-us-cover.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+@media (max-width:767px){
+  #why-us{
+    background: url(../assets/why-us-cover.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+}
+#mobil-nav-links{
+  display: none;
+  z-index: 999;
+  position: fixed;
+  top: 23%;
+  left: 28%;
+  transform: translate(-23%,-28%);
+  background: white;
+  width: 50%;
+  height: fit-content;
+  flex-direction: column;
+  padding: 30px;
+  width: 85vw;
+  box-shadow: 1px 1px 30px rgba(131, 131, 131, 0.72);
+  border-radius: 7px;
+  a{
+    position: relative;
+    font-size: $font-med;
+    font-weight: bolder;
+    transition: background 500ms ease-in-out;
+    color:$navyblue;
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #cccccc;
+}
+}
+#close{
+  display: none;
+}

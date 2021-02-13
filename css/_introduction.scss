@@ -1,0 +1,50 @@
+.intro{
+    position: relative;
+    img{
+        width: 100vw;
+    }
+
+    &__qoute{
+        position: absolute;
+        max-width: 40%;
+        font-size: 36px;
+        right: 80px;
+        bottom: 200px;
+        text-transform: uppercase;
+        font-weight: 900;
+        padding:60px 40px;
+        color: $white;
+        text-align: right;
+    }
+    @media (max-width: 1376px) {
+        &__qoute{
+            position: absolute;
+            max-width: 40%;
+            font-size: 30px;
+            right: 20px;
+            bottom: 150px;
+            text-transform: uppercase;
+            font-weight: bolder;
+            padding:60px 40px;
+            color: $white;
+            text-align: right;
+        }
+    }
+    @media (max-width: 1023px) {
+        &__qoute{
+        position: absolute;
+        max-width: 40%;
+        font-size: 22px;
+        right: 10px;
+        bottom: 0px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        padding: 10px;
+        color: $white;
+        border-radius: 7px;
+        text-align: right;
+        text-shadow: none;
+        font-weight: 900;
+        }
+    }
+}

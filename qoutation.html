@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinu Interior's | Our Services</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/logo-01.png" type="image/icon type">
+    <script src="./javascript/app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="container flex flex-jc-c">
+            <a href="./index.html">
+                <img src="./assets/chevron-left-24.png" alt="left arrow" style="position:absolute; left: 10px;"
+                    width="30" height="30">
+            </a>
+            <div class="header__logo"> <a href="./index.html"> <img src="./assets/titile.png" alt="logo"> </a> </div>
+        </nav>
+    </header>
+    <div class="container">
+        <p style="font-family: 'Playfair Display', serif; font-size: 28px; text-align: center;" class="content">
+            Free Quotation.
+        </p>
+        <!--Form-->
+        <div class="flex">
+            <div>
+                <form action="/action_page.php">
+                    <p style="font-family: 'Playfair Display', serif; font-size: 20px; text-align: left;" class="content">
+                        Fill the below form, and get free estimaion via Email.
+                    </p>
+                    <div class="contact-form" style="margin-top: 30px;">
+                        <p style="font-size: 12px;">*all the field are requied</p>
+                        <label for="floorPlan">Your Floor Plan:</label>
+                        <br>
+                        <select name="floor-plan" id="floorPlan">
+                            <option value="">--Please choose your floor plan--</option>
+                            <option value="1bhk">1 BHK</option>
+                            <option value="2bhk">2 BHK</option>
+                            <option value="3bhk">3 BHK</option>
+                            <option value="3plusbhk">3+ BHK</option>
+                        </select>
+                        <br>
+                        <label for="sq-ft">Build Area:</label>
+                        <br>
+                        <input type="number" id="sq-ft" name="sq-ft" value="sq-ft" placeholder="SQ.FT" autocomplete="off">
+                        <br>
+                        <label for="kitchen">Kitchen:</label>
+                        <br>
+                        <select name="kitchen" id="kitchen">
+                            <option value="">-- No.of Kitchen --</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <br>
+                        <label for="wardrobe">Wardrobe:</label>
+                        <br>
+                        <select name="wardrobe" id="wardrobe">
+                            <option value="">-- No.of Wardrobe --</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <br>
+                        <label for="entertainment-unit">Entertainment unit:</label>
+                        <br>
+                        <select name="entertainment-unit" id="entertainment-unit">
+                            <option value="">--No.of Entertainment unit --</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <br>
+                        <label for="study-unit">Study unit:</label>
+                        <br>
+                        <select name="study-unit" id="study-unit">
+                            <option value="">--No.of study unit --</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <br>
+                        <label for="crockery-unit">Crockery unit:</label>
+                        <br>
+                        <select name="crockery-unit" id="crockery-unit">
+                            <option value="">--No.of Crockery unit --</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <br>
+                        <p style="font-size: 12px;">we'll send detailed quotation via email</p>
+                        <label for="email">Email:</label>
+                        <br>
+                        <input type="email" id="email" name="email" value="email" placeholder="Email">
+                    </div>
+                    <input type="submit" value="Submit" class="submit">
+                </form>
+            </div>
+            <div>
+                <img src="./assets/quotation.jpg" alt="accent img" width="600" class="hide-for-mobile" style="margin-top: 40vh;border-radius: 4px;">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
